@@ -44,10 +44,10 @@
                             <a href="{{ route('events.speaker') }}">Event Speaker</a>
                         </li>
                         <li>
-                            <a href="event-ticket.html">Event Ticket</a>
+                            <a href="{{ route('events.ticket') }}">Event Ticket</a>
                         </li>
                         <li>
-                            <a href="event-checkout.html">Event Checkout</a>
+                            <a href="{{ route('events.checkout') }}">Event Checkout</a>
                         </li>
                     </ul>
                 </li>
