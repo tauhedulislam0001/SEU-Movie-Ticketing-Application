@@ -21,4 +21,14 @@ class EventController extends Controller
     {
         return view('frontend.pages.event.speaker');
     }
+
+    public function ticket() 
+    {
+        return view('frontend.pages.event.ticket');
+    }
+
+    public function checkout() 
+    {
+        return view('frontend.pages.event.checkout');
+    }
 }

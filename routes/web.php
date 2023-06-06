@@ -20,4 +20,6 @@ Route::get('/movie/food', [MoviesController::class, 'food'])->name('movie.food')
 Route::get('/events', [EventController::class, 'index'])->name('events');
 Route::get('/event/details', [EventController::class, 'details'])->name('events.details');
 Route::get('/event/speaker/profile', [EventController::class, 'speaker'])->name('events.speaker');
+Route::get('/event/ticket', [EventController::class, 'ticket'])->name('events.ticket');
+Route::get('/event/checkout', [EventController::class, 'checkout'])->name('events.checkout');
 
