@@ -35,13 +35,13 @@
                     <a href="#0">events</a>
                     <ul class="submenu">
                         <li>
-                            <a href="events.html">Events</a>
+                            <a href="{{ route('events') }}">Events</a>
                         </li>
                         <li>
-                            <a href="event-details.html">Event Details</a>
+                            <a href="{{ route('events.details') }}">Event Details</a>
                         </li>
                         <li>
-                            <a href="event-speaker.html">Event Speaker</a>
+                            <a href="{{ route('events.speaker') }}">Event Speaker</a>
                         </li>
                         <li>
                             <a href="event-ticket.html">Event Ticket</a>
