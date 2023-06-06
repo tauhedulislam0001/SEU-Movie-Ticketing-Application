@@ -3,7 +3,7 @@
     <div class="container">
         <div class="header-wrapper">
             <div class="logo">
-                <a href="index.html">
+                <a href="{{ route('home') }}">
                     <img src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="logo">
                 </a>
             </div>
@@ -72,19 +72,19 @@
                     <a href="#0">pages</a>
                     <ul class="submenu">
                         <li>
-                            <a href="about.html">About Us</a>
+                            <a href="{{ route('about') }}">About Us</a>
                         </li>
                         <li>
-                            <a href="apps-download.html">Apps Download</a>
+                            <a href="{{ route('app-download') }}">Apps Download</a>
                         </li>
                         <li>
-                            <a href="sign-in.html">Sign In</a>
+                            <a href="{{ route('login-page') }}">Sign In</a>
                         </li>
                         <li>
-                            <a href="sign-up.html">Sign Up</a>
+                            <a href="{{ route('register-page') }}">Sign Up</a>
                         </li>
                         <li>
-                            <a href="404.html">404</a>
+                            <a href="{{ route('page-not-found') }}">404</a>
                         </li>
                     </ul>
                 </li>
@@ -92,18 +92,18 @@
                     <a href="#0">blog</a>
                     <ul class="submenu">
                         <li>
-                            <a href="blog.html">Blog</a>
+                            <a href="{{ route('blogs') }}">Blog</a>
                         </li>
                         <li>
-                            <a href="blog-details.html">Blog Single</a>
+                            <a href="{{ route('blog.details') }}">Blog Single</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="contact.html">contact</a>
+                    <a href="{{ route('contact') }}">contact</a>
                 </li>
                 <li class="header-button pr-0">
-                    <a href="sign-up.html">join us</a>
+                    <a href="{{ route('register-page') }}">join us</a>
                 </li>
             </ul>
             <div class="header-bar d-lg-none">
