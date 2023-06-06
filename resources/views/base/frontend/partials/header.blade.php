@@ -55,16 +55,16 @@
                     <a href="#0">sports</a>
                     <ul class="submenu">
                         <li>
-                            <a href="sports.html">Sports</a>
+                            <a href="{{ route('sports') }}">Sports</a>
                         </li>
                         <li>
-                            <a href="sport-details.html">Sport Details</a>
+                            <a href="{{ route('sports.details') }}">Sport Details</a>
                         </li>
                         <li>
-                            <a href="sports-ticket.html">Sport Ticket</a>
+                            <a href="{{ route('sports.ticket') }}">Sport Ticket</a>
                         </li>
                         <li>
-                            <a href="sports-checkout.html">Sport Checkout</a>
+                            <a href="{{ route('sports.checkout') }}">Sport Checkout</a>
                         </li>
                     </ul>
                 </li>
