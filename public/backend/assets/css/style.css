@@ -26143,7 +26143,8 @@ Height property
   transition: all 0.3s ease-in-out;
   overflow: hidden;
   border-radius: 0;
-  margin-right: 361px; }
+  /* margin-right: 361px; */
+  }
 
 @media (max-width: 767px) {
   .content-wrapper {
@@ -26165,9 +26166,12 @@ Height property
   z-index: 999;
   top: 0;
   right: 0;
-  left: 0; }
+  left: 0;
+  width: 100%;
+  }
 .fixed .main-sidebar {
-  position: fixed; }
+  position: fixed;
+  }
 .fixed .content-wrapper {
   margin-top: 80px; }
 .fixed .right-side {
