@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('mobile')->unique();
             $table->tinyInteger('can_login')->default(1)->comment("can_login = 1, can_not_login = 0, banned = 2");
             $table->tinyInteger('status')->default(1)->comment("active = 1, inactive = 2");
-            $table->tinyInteger('wallet')->default(0);
+            $table->float('wallet')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

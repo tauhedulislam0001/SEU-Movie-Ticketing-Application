@@ -5,31 +5,26 @@
 		  <div class="multinav-scroll ps ps--active-y" style="height: 100%;">	
 			  <!-- sidebar menu-->
 			  <ul class="sidebar-menu" data-widget="tree">
-				<li class="treeview active">
-				  <a href="https://riday-admin-template.multipurposethemes.com/bs5/main/index2.html#">
-					<i class="icon-Home"></i>
-					<span>Dashboard</span>
-					<span class="pull-right-container">
-					  <i class="fa fa-angle-right pull-right"></i>
-					</span>
-				  </a>
-				  <ul class="treeview-menu">
-					<li><a href="https://riday-admin-template.multipurposethemes.com/bs5/main/index.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dashboard 1</a></li>
-					<li class="active"><a href="https://riday-admin-template.multipurposethemes.com/bs5/main/index2.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dashboard 2</a></li>
-					<li><a href="https://riday-admin-template.multipurposethemes.com/bs5/main/index3.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dashboard 3</a></li>
-				  </ul>
+				{{-- Dashboard --}}
+				
+				<li class="header">Dashboard</li>
+				<li class="@yield('dashboard')">
+					<a href="{{ route('home') }}">
+						<i class="glyphicon glyphicon-home"></i>
+						<span>Dashboard</span>
+					</a>
 				</li>
-				<li class="treeview">
-				  <a href="https://riday-admin-template.multipurposethemes.com/bs5/main/index2.html#">
+				<li class="treeview @yield('Manage-user')">
+				  <a href="#">
 					<i class="icon-Clipboard-check"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
-					<span>Order</span>
+					<span>User Management</span>
 					<span class="pull-right-container">
 					  <i class="fa fa-angle-right pull-right"></i>
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="https://riday-admin-template.multipurposethemes.com/bs5/main/order.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Order List</a></li>
-					<li><a href="https://riday-admin-template.multipurposethemes.com/bs5/main/order_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Order Details</a></li>
+					<li class="@yield('Manage-user.admin-user')"><a href="{{ route('admin-users.index') }}"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Admin Users</a></li>
+					<li class="@yield('Manage-user.customer')"><a href="{{ route('customer.index') }}"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Customers</a></li>
 				  </ul>
 				</li>
 				<li class="treeview">
@@ -384,21 +379,6 @@
 				  </ul>
 				</li>  	     
 			  </ul>
-			  
-			  <div class="sidebar-widgets">
-				  <div class="mx-25 mb-30 pb-20 side-bx bg-primary bg-food-dark rounded20">
-					<div class="text-center">
-						<img src="./Riday - Restaurant Bootstrap Admin Template Webapp_files/res-menu.png" class="sideimg" alt="">
-						<h3 class="title-bx">Add Menu</h3>
-						<a href="https://riday-admin-template.multipurposethemes.com/bs5/main/index2.html#" class="text-white py-10 fs-16 mb-0">
-							Manage Your food and beverages menu <i class="mdi mdi-arrow-right"></i>
-						</a>
-					</div>
-				  </div>
-				<div class="copyright text-start m-25">
-					<p><strong class="d-block">Riday Admin Dashboard</strong> © 2021 All Rights Reserved</p>
-				</div>
-			  </div>
 		  <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 868px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 672px;"></div></div></div>
 		</div>
     </section>

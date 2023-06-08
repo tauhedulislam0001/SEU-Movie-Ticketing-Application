@@ -113,6 +113,9 @@
                                 @csrf
                             </form>
                         </li>
+                        <li>
+                            <a href="#">Wallet Balance : {{ Auth::guard('web')->user()->wallet }}</a>
+                        </li>
                     </ul>
                 </li>
                 @else
