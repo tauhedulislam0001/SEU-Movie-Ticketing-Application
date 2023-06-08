@@ -240,7 +240,11 @@
 				 <a class="dropdown-item" href="https://riday-admin-template.multipurposethemes.com/bs5/main/index2.html#"><i class="ti-wallet text-muted me-2"></i> My Wallet</a>
 				 <a class="dropdown-item" href="https://riday-admin-template.multipurposethemes.com/bs5/main/index2.html#"><i class="ti-settings text-muted me-2"></i> Settings</a>
 				 <div class="dropdown-divider"></div>
-				 <a class="dropdown-item" href="https://riday-admin-template.multipurposethemes.com/bs5/main/index2.html#"><i class="ti-lock text-muted me-2"></i> Logout</a>
+				 <a class="dropdown-item" href="" onclick="event.preventDefault();
+				 document.getElementById('logout-form').submit();"><i class="ti-lock text-muted mr-2"></i> Logout</a>
+				 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+					 @csrf
+				 </form>
               </li>
             </ul>
           </li>	
