@@ -24,16 +24,28 @@
 			</li>
 			<li class="btn-group nav-item d-none d-xl-inline-block">
 				<div class="app-menu">
-					<div class="search-bx mx-5">
-						<form>
-							<div class="input-group">
-							  <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-							  <div class="input-group-append">
-								<button class="btn" type="submit" id="button-addon3"><i class="ti-search"></i></button>
-							  </div>
-							</div>
-						</form>
-					</div>
+                    <div class="search-bx mx-5 d-flex">
+                        <div class="wallet-balance">
+                            @if (Auth::guard('web')->user()->wallet != 0)
+                            @if (Auth::guard('web')->user()->wallet >= 500)
+                            <span class="badge badge-success" style="font-size: 15px"><b>Wallet Balance:
+                                    {{ Auth::guard('web')->user()->wallet }} {{
+                                    Auth::guard('web')->user()->currency }}</b>
+                            </span>
+                            @endif
+                            @endif
+                        </div>
+                        {{-- <form>
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search" aria-label="Search"
+                                    aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit" id="button-addon3"><i
+                                            class="ti-search"></i></button>
+                                </div>
+                            </div>
+                        </form> --}}
+                    </div>
 				</div>
 			</li>
 		</ul> 

@@ -46,4 +46,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public static function AllCustomer()
+    {
+        return User::where('user_type', '=', 2)->count();
+    }
+
+    public static function AllAdminUser()
+    {
+        return User::where('user_type', '=', 1)->count();
+    }
 }

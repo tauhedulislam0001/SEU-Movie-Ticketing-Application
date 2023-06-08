@@ -1,6 +1,6 @@
 <!-- Vendors Style-->
 <link rel="stylesheet" href="{{ asset('backend/assets/css/vendors_css.css') }}">
-	  
+<link rel="stylesheet" href="{{ asset('backend/assets/css/jquery.dataTables.min.css') }}">
 <!-- Style-->  
 <link rel="stylesheet" href="{{ asset('backend/assets/css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('backend/assets/css/skin_color.css') }}">
