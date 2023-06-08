@@ -45,18 +45,51 @@
                         <span class="cate">welcome</span>
                         <h2 class="title">to Boleto </h2>
                     </div>
-                    <form class="account-form">
+                    <form class="account-form" method="POST" action="{{ route('register') }}">
+                        @csrf
+                        <div class="form-group">
+                            <label for="name">Name<span>*</span></label>
+                            <input type="text" placeholder="Enter Your Name" name="name" id="name" class="@error('name') is-invalid @enderror" required>
+
+                            @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
                         <div class="form-group">
                             <label for="email1">Email<span>*</span></label>
-                            <input type="text" placeholder="Enter Your Email" id="email1" required>
+                            <input type="text" placeholder="Enter Your Email" id="email" name="email" class="@error('email') is-invalid @enderror" required>
+
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group">
-                            <label for="pass1">Password<span>*</span></label>
-                            <input type="password" placeholder="Password" id="pass1" required>
+                            <label for="password">Password<span>*</span></label>
+                            <input type="password" placeholder="Password" id="password" name="password" class="@error('password') is-invalid @enderror" required>
+
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group">
-                            <label for="pass2">Confirm Password<span>*</span></label>
-                            <input type="password" placeholder="Password" id="pass2" required>
+                            <label for="confirm_password">Confirm Password<span>*</span></label>
+                            <input id="password-confirm" type="password" name="password_confirmation" required autocomplete="new-password">
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile<span>*</span></label>
+                            <input type="mobile" placeholder="mobile" id="mobile" name="mobile" class="@error('mobile') is-invalid @enderror" required>
+
+                            @error('mobile')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group checkgroup">
                             <input type="checkbox" id="bal" required checked>
@@ -67,7 +100,7 @@
                         </div>
                     </form>
                     <div class="option">
-                        Already have an account? <a href="sign-in.html">Login</a>
+                        Already have an account? <a href="{{ route('login-page') }}">Login</a>
                     </div>
                     <div class="or"><span>Or</span></div>
                     <ul class="social-icons">

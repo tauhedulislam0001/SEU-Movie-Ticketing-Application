@@ -47,14 +47,27 @@
                         <span class="cate">hello</span>
                         <h2 class="title">welcome back</h2>
                     </div>
-                    <form class="account-form">
+                    <form class="account-form" method="POST" action="{{ route('login') }}">
+                        @csrf
                         <div class="form-group">
                             <label for="email2">Email<span>*</span></label>
-                            <input type="text" placeholder="Enter Your Email" id="email2" required>
+                            <input id="email" type="email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Enter Your Email" required autocomplete="email" autofocus>
+
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="pass3">Password<span>*</span></label>
-                            <input type="password" placeholder="Password" id="pass3" required>
+                            <input id="password" type="password" class="@error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group checkgroup">
                             <input type="checkbox" id="bal2" required checked>

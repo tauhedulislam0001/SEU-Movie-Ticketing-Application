@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\Dashboard\DashboardController;
 use App\Http\Controllers\Frontend\About\AboutController;
 use App\Http\Controllers\Frontend\AppDownload\AppDownloadController;
 use App\Http\Controllers\Frontend\Blog\BlogController;
@@ -55,3 +56,13 @@ Route::get('/blog/details', [BlogController::class, 'details'])->name('blog.deta
 
 /* ---------- Contact Controller ---------- */
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+
+/* ---------- Contact Controller ---------- */
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
