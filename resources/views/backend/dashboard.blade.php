@@ -8,87 +8,62 @@ Ticketing Dashboard
 
 @section('content')
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <div class="container-full">
-      <!-- Main content -->
-      <section class="content">			
-          <div class="row">
-              <div class="col-xxxl-6 col-12">
-                  <div class="row">
-                      <div class="col-md-6 col-12">
-                          <div class="box box-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                  <div class="text-start">
-                                      <h5>Total Menu</h5>
-                                      <h3 class="mb-0 fw-500">325</h3>
-                                  </div>
-                                  <div>
-                                      <div id="progressbar1" class="mx-auto w-100 position-relative"><svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="#eee" stroke-width="8" fill-opacity="0"></path><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="rgb(230,100,48)" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 219.942, 219.942; stroke-dashoffset: 48.3873;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(230, 100, 48); font-size: 1.5rem;"><i class="icon-Dinner1"><span class="path1"></span><span class="path2"></span></i></div></div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6 col-12">
-                          <div class="box box-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                  <div class="text-start">
-                                      <h5>Total Revenue</h5>
-                                      <h3 class="mb-0 fw-500">$425k</h3>
-                                  </div>
-                                  <div>
-                                      <div id="progressbar2" class="mx-auto w-100 position-relative"><svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="#eee" stroke-width="8" fill-opacity="0"></path><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="rgb(230,100,48)" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 219.942, 219.942; stroke-dashoffset: 109.971;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(230, 100, 48); font-size: 1.5rem;"><i class="icon-Dollar"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i></div></div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6 col-12">
-                          <div class="box box-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                  <div class="text-start">
-                                      <h5>Total Orders</h5>
-                                      <h3 class="mb-0 fw-500">415</h3>
-                                  </div>
-                                  <div>
-                                      <div id="progressbar3" class="mx-auto w-100 position-relative"><svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="#eee" stroke-width="8" fill-opacity="0"></path><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="rgb(230,100,48)" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 219.942, 219.942; stroke-dashoffset: 131.965;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(230, 100, 48); font-size: 1.5rem;"><i class="icon-Clipboard"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i></div></div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6 col-12">
-                          <div class="box box-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                  <div class="text-start">
-                                      <h5>Total Customers</h5>
-                                      <h3 class="mb-0 fw-500">985</h3>
-                                  </div>
-                                  <div>
-                                      <div id="progressbar4" class="mx-auto w-100 position-relative"><svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="#eee" stroke-width="8" fill-opacity="0"></path><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="rgb(230,100,48)" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 219.942, 219.942; stroke-dashoffset: 153.96;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(230, 100, 48); font-size: 1.5rem;"><i class="icon-User"><span class="path1"></span><span class="path2"></span></i></div></div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xxxl-6 col-12">
-                  <div class="box">
-                      <div class="box-body" style="position: relative;">
-                          <div class="d-flex justify-content-between">
-                              <div>
-                                  <h4 class="box-title mb-0">Daily Revenue</h4>
-                                  <p class="mb-0 text-mute">Lorem ipsum dolor</p>
-                              </div>
-                              <div class="text-end">
-                                  <h3 class="box-title mb-0 fw-500">$ 154K</h3>
-                                  <p class="mb-0"><span class="text-success">+ 1.5%</span> than last week</p>
-                              </div>
-                          </div>
-                          <div id="chart" class="mt-20" style="min-height: 193px;"><div id="apexchartsl4ulksmz" class="apexcharts-canvas apexchartsl4ulksmz apexcharts-theme-light" style="width: 549px; height: 178px;"><svg id="SvgjsSvg1591" width="549" height="178" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1593" class="apexcharts-inner apexcharts-graphical" transform="translate(45.359375, 30)"><defs id="SvgjsDefs1592"><clippath id="gridRectMaskl4ulksmz"><rect id="SvgjsRect1599" width="489.9609375" height="114.34800000000001" x="-4" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clippath><clippath id="gridRectMarkerMaskl4ulksmz"><rect id="SvgjsRect1600" width="485.9609375" height="114.34800000000001" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clippath><lineargradient id="SvgjsLinearGradient1606" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1607" stop-opacity="0.65" stop-color="rgba(76,149,221,0.65)" offset="0"></stop><stop id="SvgjsStop1608" stop-opacity="0.5" stop-color="rgba(166,202,238,0.5)" offset="1"></stop><stop id="SvgjsStop1609" stop-opacity="0.5" stop-color="rgba(166,202,238,0.5)" offset="1"></stop></lineargradient></defs><line id="SvgjsLine1598" x1="0" y1="0" x2="0" y2="110.34800000000001" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="110.34800000000001" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1612" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1613" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"><text id="SvgjsText1615" font-family="Helvetica, Arial, sans-serif" x="0" y="139.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1616">Mon</tspan><title>Mon</title></text><text id="SvgjsText1618" font-family="Helvetica, Arial, sans-serif" x="80.32682291666666" y="139.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1619">Tue</tspan><title>Tue</title></text><text id="SvgjsText1621" font-family="Helvetica, Arial, sans-serif" x="160.65364583333334" y="139.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1622">Wed</tspan><title>Wed</title></text><text id="SvgjsText1624" font-family="Helvetica, Arial, sans-serif" x="240.98046875000003" y="139.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1625">Thu</tspan><title>Thu</title></text><text id="SvgjsText1627" font-family="Helvetica, Arial, sans-serif" x="321.30729166666674" y="139.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1628">Fri</tspan><title>Fri</title></text><text id="SvgjsText1630" font-family="Helvetica, Arial, sans-serif" x="401.6341145833334" y="139.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1631">Set</tspan><title>Set</title></text><text id="SvgjsText1633" font-family="Helvetica, Arial, sans-serif" x="481.96093750000006" y="139.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1634">Sun</tspan><title>Sun</title></text></g><line id="SvgjsLine1635" x1="0" y1="111.34800000000001" x2="481.9609375" y2="111.34800000000001" stroke="#e0e0e0" stroke-dasharray="0" stroke-width="1"></line></g><g id="SvgjsG1650" class="apexcharts-grid"><g id="SvgjsG1651" class="apexcharts-gridlines-horizontal"><line id="SvgjsLine1660" x1="0" y1="0" x2="481.9609375" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1661" x1="0" y1="22.0696" x2="481.9609375" y2="22.0696" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1662" x1="0" y1="44.1392" x2="481.9609375" y2="44.1392" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1663" x1="0" y1="66.2088" x2="481.9609375" y2="66.2088" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1664" x1="0" y1="88.2784" x2="481.9609375" y2="88.2784" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1665" x1="0" y1="110.34800000000001" x2="481.9609375" y2="110.34800000000001" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG1652" class="apexcharts-gridlines-vertical"></g><line id="SvgjsLine1653" x1="0" y1="111.34800000000001" x2="0" y2="117.34800000000001" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1654" x1="80.32682291666667" y1="111.34800000000001" x2="80.32682291666667" y2="117.34800000000001" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1655" x1="160.65364583333334" y1="111.34800000000001" x2="160.65364583333334" y2="117.34800000000001" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1656" x1="240.98046875" y1="111.34800000000001" x2="240.98046875" y2="117.34800000000001" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1657" x1="321.3072916666667" y1="111.34800000000001" x2="321.3072916666667" y2="117.34800000000001" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1658" x1="401.63411458333337" y1="111.34800000000001" x2="401.63411458333337" y2="117.34800000000001" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1659" x1="481.96093750000006" y1="111.34800000000001" x2="481.96093750000006" y2="117.34800000000001" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1667" x1="0" y1="110.34800000000001" x2="481.9609375" y2="110.34800000000001" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1666" x1="0" y1="1" x2="0" y2="110.34800000000001" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1602" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1603" class="apexcharts-series" seriesName="Revenue" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1610" d="M 0 110.34800000000001L 0 87.54274666666667C 28.11438802083333 87.54274666666667 52.21243489583334 73.56533333333334 80.32682291666667 73.56533333333334C 108.4412109375 73.56533333333334 132.5392578125 89.74970666666668 160.65364583333334 89.74970666666668C 188.76803385416667 89.74970666666668 212.86608072916667 58.85226666666667 240.98046875 58.85226666666667C 269.09485677083336 58.85226666666667 293.1929036458333 77.24360000000001 321.3072916666667 77.24360000000001C 349.4216796875 77.24360000000001 373.5197265625 44.1392 401.6341145833333 44.1392C 429.7485026041667 44.1392 453.84654947916664 7.356533333333331 481.9609375 7.356533333333331C 481.9609375 7.356533333333331 481.9609375 7.356533333333331 481.9609375 110.34800000000001M 481.9609375 7.356533333333331z" fill="url(#SvgjsLinearGradient1606)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskl4ulksmz)" pathTo="M 0 110.34800000000001L 0 87.54274666666667C 28.11438802083333 87.54274666666667 52.21243489583334 73.56533333333334 80.32682291666667 73.56533333333334C 108.4412109375 73.56533333333334 132.5392578125 89.74970666666668 160.65364583333334 89.74970666666668C 188.76803385416667 89.74970666666668 212.86608072916667 58.85226666666667 240.98046875 58.85226666666667C 269.09485677083336 58.85226666666667 293.1929036458333 77.24360000000001 321.3072916666667 77.24360000000001C 349.4216796875 77.24360000000001 373.5197265625 44.1392 401.6341145833333 44.1392C 429.7485026041667 44.1392 453.84654947916664 7.356533333333331 481.9609375 7.356533333333331C 481.9609375 7.356533333333331 481.9609375 7.356533333333331 481.9609375 110.34800000000001M 481.9609375 7.356533333333331z" pathFrom="M -1 110.34800000000001L -1 110.34800000000001L 80.32682291666667 110.34800000000001L 160.65364583333334 110.34800000000001L 240.98046875 110.34800000000001L 321.3072916666667 110.34800000000001L 401.6341145833333 110.34800000000001L 481.9609375 110.34800000000001"></path><path id="SvgjsPath1611" d="M 0 87.54274666666667C 28.11438802083333 87.54274666666667 52.21243489583334 73.56533333333334 80.32682291666667 73.56533333333334C 108.4412109375 73.56533333333334 132.5392578125 89.74970666666668 160.65364583333334 89.74970666666668C 188.76803385416667 89.74970666666668 212.86608072916667 58.85226666666667 240.98046875 58.85226666666667C 269.09485677083336 58.85226666666667 293.1929036458333 77.24360000000001 321.3072916666667 77.24360000000001C 349.4216796875 77.24360000000001 373.5197265625 44.1392 401.6341145833333 44.1392C 429.7485026041667 44.1392 453.84654947916664 7.356533333333331 481.9609375 7.356533333333331" fill="none" fill-opacity="1" stroke="#4c95dd" stroke-opacity="1" stroke-linecap="butt" stroke-width="4" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskl4ulksmz)" pathTo="M 0 87.54274666666667C 28.11438802083333 87.54274666666667 52.21243489583334 73.56533333333334 80.32682291666667 73.56533333333334C 108.4412109375 73.56533333333334 132.5392578125 89.74970666666668 160.65364583333334 89.74970666666668C 188.76803385416667 89.74970666666668 212.86608072916667 58.85226666666667 240.98046875 58.85226666666667C 269.09485677083336 58.85226666666667 293.1929036458333 77.24360000000001 321.3072916666667 77.24360000000001C 349.4216796875 77.24360000000001 373.5197265625 44.1392 401.6341145833333 44.1392C 429.7485026041667 44.1392 453.84654947916664 7.356533333333331 481.9609375 7.356533333333331" pathFrom="M -1 110.34800000000001L -1 110.34800000000001L 80.32682291666667 110.34800000000001L 160.65364583333334 110.34800000000001L 240.98046875 110.34800000000001L 321.3072916666667 110.34800000000001L 401.6341145833333 110.34800000000001L 481.9609375 110.34800000000001"></path><g id="SvgjsG1604" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1673" r="0" cx="0" cy="0" class="apexcharts-marker wd87xo7g2 no-pointer-events" stroke="#ffffff" fill="#4c95dd" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1605" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine1668" x1="0" y1="0" x2="481.9609375" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1669" x1="0" y1="0" x2="481.9609375" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1670" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1671" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1672" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1597" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG1636" class="apexcharts-yaxis" rel="0" transform="translate(15.359375, 0)"><g id="SvgjsG1637" class="apexcharts-yaxis-texts-g"><text id="SvgjsText1638" font-family="Helvetica, Arial, sans-serif" x="20" y="31.5" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1639">150</tspan></text><text id="SvgjsText1640" font-family="Helvetica, Arial, sans-serif" x="20" y="53.5696" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1641">120</tspan></text><text id="SvgjsText1642" font-family="Helvetica, Arial, sans-serif" x="20" y="75.6392" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1643">90</tspan></text><text id="SvgjsText1644" font-family="Helvetica, Arial, sans-serif" x="20" y="97.7088" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1645">60</tspan></text><text id="SvgjsText1646" font-family="Helvetica, Arial, sans-serif" x="20" y="119.7784" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1647">30</tspan></text><text id="SvgjsText1648" font-family="Helvetica, Arial, sans-serif" x="20" y="141.848" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1649">0</tspan></text></g></g><g id="SvgjsG1594" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip apexcharts-theme-light"><div class="apexcharts-tooltip-title" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"></div><div class="apexcharts-tooltip-series-group"><span class="apexcharts-tooltip-marker" style="background-color: rgb(76, 149, 221);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-xaxistooltip apexcharts-xaxistooltip-bottom apexcharts-theme-light"><div class="apexcharts-xaxistooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div><div class="apexcharts-toolbar" style="top: 0px; right: 3px;"><div class="apexcharts-menu-icon" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="apexcharts-menu"><div class="apexcharts-menu-item exportSVG" title="Download SVG">Download SVG</div><div class="apexcharts-menu-item exportPNG" title="Download PNG">Download PNG</div><div class="apexcharts-menu-item exportCSV" title="Download CSV">Download CSV</div></div></div></div></div>
-                      <div class="resize-triggers"><div class="expand-trigger"><div style="width: 592px; height: 306px;"></div></div><div class="contract-trigger"></div></div></div>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <!-- /.content -->
+<div class="row">
+    <div class="col-xxxl-12 col-12">
+        <div class="row">
+            <div class="col-md-3 col-12">
+                <div class="box box-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="text-start">
+                            <h5>Total Booking</h5>
+                            <h3 class="mb-0 fw-500">325</h3>
+                        </div>
+                        <div>
+                            <div id="progressbar1" class="mx-auto w-100 position-relative"><svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="#eee" stroke-width="8" fill-opacity="0"></path><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="rgb(230,100,48)" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 219.942, 219.942; stroke-dashoffset: 48.3873;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(230, 100, 48); font-size: 1.5rem;"><i class="icon-Dinner1"><span class="path1"></span><span class="path2"></span></i></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="box box-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="text-start">
+                            <h5>Total Revenue</h5>
+                            <h3 class="mb-0 fw-500">$425k</h3>
+                        </div>
+                        <div>
+                            <div id="progressbar2" class="mx-auto w-100 position-relative"><svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="#eee" stroke-width="8" fill-opacity="0"></path><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="rgb(230,100,48)" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 219.942, 219.942; stroke-dashoffset: 109.971;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(230, 100, 48); font-size: 1.5rem;"><i class="icon-Dollar"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="box box-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="text-start">
+                            <h5>All Admin User</h5>
+                            <h3 class="mb-0 fw-500">{{ App\Models\User::AllCustomer() }}</h3>
+                        </div>
+                        <div>
+                            <div id="progressbar3" class="mx-auto w-100 position-relative"><svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="#eee" stroke-width="8" fill-opacity="0"></path><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="rgb(230,100,48)" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 219.942, 219.942; stroke-dashoffset: 131.965;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(230, 100, 48); font-size: 1.5rem;"><i class="icon-Clipboard"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="box box-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="text-start">
+                            <h5>Total Customers</h5>
+                            <h3 class="mb-0 fw-500">{{ App\Models\User::AllAdminUser() }}</h3>
+                        </div>
+                        <div>
+                            <div id="progressbar4" class="mx-auto w-100 position-relative"><svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="#eee" stroke-width="8" fill-opacity="0"></path><path d="M 50,50 m 0,-35 a 35,35 0 1 1 0,70 a 35,35 0 1 1 0,-70" stroke="rgb(230,100,48)" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 219.942, 219.942; stroke-dashoffset: 153.96;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(230, 100, 48); font-size: 1.5rem;"><i class="icon-User"><span class="path1"></span><span class="path2"></span></i></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -14,17 +14,17 @@
 						<span>Dashboard</span>
 					</a>
 				</li>
-				<li class="treeview">
-				  <a href="https://riday-admin-template.multipurposethemes.com/bs5/main/index2.html#">
+				<li class="treeview @yield('Manage-user')">
+				  <a href="#">
 					<i class="icon-Clipboard-check"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
-					<span>Order</span>
+					<span>User Management</span>
 					<span class="pull-right-container">
 					  <i class="fa fa-angle-right pull-right"></i>
 					</span>
 				  </a>
 				  <ul class="treeview-menu">
-					<li><a href="https://riday-admin-template.multipurposethemes.com/bs5/main/order.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Order List</a></li>
-					<li><a href="https://riday-admin-template.multipurposethemes.com/bs5/main/order_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Order Details</a></li>
+					<li class="@yield('Manage-user.admin-user')"><a href="{{ route('admin-users.index') }}"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Admin Users</a></li>
+					<li class="@yield('Manage-user.customer')"><a href="{{ route('customer.index') }}"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Customers</a></li>
 				  </ul>
 				</li>
 				<li class="treeview">

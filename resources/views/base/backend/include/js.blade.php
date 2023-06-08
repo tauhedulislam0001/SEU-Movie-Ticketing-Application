@@ -1,15 +1,18 @@
-	<!-- Vendor JS -->
+<script src=" {{ asset('backend/assets/js/jquery-2.2.4.min.js') }}"></script>
+<!-- Vendor JS -->
 	<script src=" {{ asset('backend/assets/js/vendors.min.js') }}"></script>
+	{{-- <script src=" {{ asset('backend/assets/js/pages/dashboard.js') }}"></script> --}}
 	<script src=" {{ asset('backend/assets/js/pages/chat-popup.js') }}"></script>
 	<script src=" {{ asset('backend/assets/vendor_components/apexcharts-bundle/dist/apexcharts.min.js') }}"></script>
-    <script src=" {{ asset('backend/assets/icons/feather-icons/feather.min.js') }}"></script>
+  <script src=" {{ asset('backend/assets/icons/feather-icons/feather.min.js') }}"></script>
 	
 	<script src=" {{ asset('backend/assets/vendor_components/progressbar.js-master/dist/progressbar.js') }} "></script>
 	<script src=" {{ asset('backend/assets/vendor_components/OwlCarousel2/dist/owl.carousel.js') }}"></script>
-	
+	<script src=" {{ asset('backend/assets/js/pages/datatable.js') }}"></script>
+	<script src=" {{ asset('backend/assets/vendor_components/datatable/datatables.min.js') }}"></script>
+
 	<!-- Riday Admin App -->
 	<script src=" {{ asset('backend/assets/js/template.js') }}"></script>
-	{{-- <script src=" {{ asset('backend/assets/js/pages/dashboard3.js') }}"></script> --}}
 	
 
 
