@@ -57,12 +57,10 @@ Route::get('/blog/details', [BlogController::class, 'details'])->name('blog.deta
 /* ---------- Contact Controller ---------- */
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
-/* ---------- Contact Controller ---------- */
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
 
 
 
 Auth::routes();
 
+/* ---------- HomeController Controller ---------- */
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

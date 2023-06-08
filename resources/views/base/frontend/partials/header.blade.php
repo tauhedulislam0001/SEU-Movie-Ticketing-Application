@@ -77,12 +77,12 @@
                         <li>
                             <a href="{{ route('app-download') }}">Apps Download</a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="{{ route('login-page') }}">Sign In</a>
                         </li>
                         <li>
                             <a href="{{ route('register-page') }}">Sign Up</a>
-                        </li>
+                        </li> --}}
                         <li>
                             <a href="{{ route('page-not-found') }}">404</a>
                         </li>
@@ -102,9 +102,24 @@
                 <li>
                     <a href="{{ route('contact') }}">contact</a>
                 </li>
+                @if (Auth::check())
+                <li>
+                    <a>{{Auth::guard('web')->user()->name }}</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="" onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">Logout</a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                @else
                 <li class="header-button pr-0">
                     <a href="{{ route('register-page') }}">join us</a>
                 </li>
+                @endif
             </ul>
             <div class="header-bar d-lg-none">
                 <span></span>
