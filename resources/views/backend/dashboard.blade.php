@@ -1,4 +1,10 @@
-@extends('base.backend.master')y
+@extends('base.backend.master')
+@section('dashboard')
+active
+@endsection
+@section('title')
+Ticketing Dashboard
+@endsection
 
 @section('content')
 <!-- Content Wrapper. Contains page content -->

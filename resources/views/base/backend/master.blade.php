@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="{{ asset('backend/images/favicon.ico') }}">
 
-    <title>Riday - Restaurant Bootstrap Admin Template Webapp</title>
+    <title>@yield('title')</title>
     @include('base.backend.include.css')
 </head>
 

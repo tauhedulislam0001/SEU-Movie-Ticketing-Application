@@ -4,11 +4,11 @@
 			<span class="icon-Align-left"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
 		</a>	
 		<!-- Logo -->
-		<a href="https://riday-admin-template.multipurposethemes.com/bs5/main/index.html" class="logo">
+		<a href="{{ route('home') }}" class="logo">
 		  <!-- logo-->
 		  <div class="logo-lg">
-			  <span class="light-logo"><img src="./Riday - Restaurant Bootstrap Admin Template Webapp_files/logo-dark-text.png" alt="logo"></span>
-			  <span class="dark-logo"><img src="./Riday - Restaurant Bootstrap Admin Template Webapp_files/logo-light-text.png" alt="logo"></span>
+			  <span class="light-logo"><h1>Boleto</h1></span>
+			  <span class="dark-logo"><h1>Boleto</h1></span>
 		  </div>
 		</a>	
 	</div>  
